@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mole {
+    /*background-color: #736357;*/
+    border-radius: 100px 100px 0 0;
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    top: 102%;
+    /*background-image: url(images/mole.png);*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#leftEar, #rightEar {
+    background-color: #736357;
+    border-radius: 100px;
+    position: absolute;
+    top: -1%;
+        min-width: 30%;
+    padding-top:30%;
+    z-index: -1;
+}
+
+#leftEar {
+    left: 0px;
+}
+
+#rightEar {
+    right: 0px;
+}
+
+#mole1 {
+    left: 10%;
+}
+
+#mole2 {
+    left: 45%;
+}
+
+#mole3 {
+    right: 10%;
+}
