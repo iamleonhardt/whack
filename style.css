@@ -2,6 +2,13 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+
+}
+
+.gameContainer1{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .mole {
@@ -34,6 +41,7 @@ body {
     right: 0px;
 }
 
+
 #mole1 {
     left: 10%;
 }
@@ -44,4 +52,41 @@ body {
 
 #mole3 {
     right: 10%;
+}
+
+
+.score {
+    font-family: roboto, arial, sans-serif;
+    font-size: 1.5vw;
+    position: absolute;
+    right: 5vw;
+    text-align: right;
+    }
+
+.tryAgain {
+    background-color: #00e3bb;
+    color: #ffffff;
+    margin: .3vw 0;
+    padding: .5vw;
+    font-size: 1vw;
+    box-sizing: border-box;
+}
+
+.startButton {
+    height: 3vh;
+    width: 14vw;
+    font-size: 3vh;
+    line-height: 3vh;
+    font-family: roboto, arial, sans-serif;
+    background-color: #00e3bb;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    left: 50%;
+    padding: .5vw;
+    text-align: center;
+
+
 }
