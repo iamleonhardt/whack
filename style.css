@@ -14,13 +14,14 @@ body {
 .mole {
     /*background-color: #736357;*/
     border-radius: 100px;
-    height: 10%;
-    width: 10%;
+    height: 15vh;
+    width: 15vh;
     position: absolute;
     right: 100%;
     /*background-image: url(images/mole.png);*/
-    background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*#leftEar, #rightEar {*/
@@ -89,7 +90,7 @@ body {
 }
 
 .congrats {
-    font-size: 1vw;
+    font-size: 20px;
 }
 
 input {
