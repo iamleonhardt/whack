@@ -13,45 +13,53 @@ body {
 
 .mole {
     /*background-color: #736357;*/
-    border-radius: 100px 100px 0 0;
-    height: 100%;
+    border-radius: 100px;
+    height: 10%;
     width: 10%;
     position: absolute;
-    top: 102%;
+    right: 100%;
     /*background-image: url(images/mole.png);*/
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
-#leftEar, #rightEar {
-    background-color: #736357;
-    border-radius: 100px;
-    position: absolute;
-    top: -1%;
-        min-width: 30%;
-    padding-top:30%;
-    z-index: -1;
-}
+/*#leftEar, #rightEar {*/
+    /*background-color: #736357;*/
+    /*border-radius: 100px;*/
+    /*position: absolute;*/
+    /*top: -1%;*/
+        /*min-width: 30%;*/
+    /*padding-top:30%;*/
+    /*z-index: -1;*/
+/*}*/
 
-#leftEar {
-    left: 0px;
-}
+/*#leftEar {*/
+    /*left: 0px;*/
+/*}*/
 
-#rightEar {
-    right: 0px;
-}
+/*#rightEar {*/
+    /*right: 0px;*/
+/*}*/
 
 
 #mole1 {
-    left: 10%;
+    top: 9%;
 }
 
 #mole2 {
-    left: 45%;
+    top: 27%;
 }
 
 #mole3 {
-    right: 10%;
+    top: 45%;
+}
+
+#mole4 {
+    top: 63%
+}
+
+#mole5 {
+    top: 81%
 }
 
 

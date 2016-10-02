@@ -1,8 +1,9 @@
 var bgColor = '#736357';
 var defaultImage = 'mole.png';
 var whackedImage = 'whack.png';
+var highScore = 0;
 var score = 0;
-var min = 1500;
+var min = 800;
 var max = 5000;
 var hit = new Audio();
 var miss = new Audio();
@@ -29,7 +30,7 @@ $('document').ready(function(){
     // });
 
     function gameOver(){
-        $('.mole').stop().animate({'top': '102%'}, 1000);
+        $('.mole').stop().animate({'right': '100%'}, 1000);
         $('.score').html('Score: ' + score);
         $('.score').append('<div class="tryAgain">Game Over | Try Again</div>');
         $('.tryAgain').click(function(){
@@ -42,21 +43,21 @@ $('document').ready(function(){
         score = 0;
         $('.score').html('Score: ' + score );
 
-        $('.mole').animate({'top': '10%'}, 2500, function () {
+        $('.mole').animate({'right': '10%'}, 2500, function () {
             gameOver();
         });
     }
 
-    $('.mole').click(function(){
+    $('.mole').hover(function(){
         $(this).css({'background-image': 'url(images/'+ whackedImage + ')'});
         score = score + 1;
         $('.score').html('Score: ' + score );
         playHitSound();
-        $(this).stop().animate({'top': '102%'}, 1000, function(){
+        $(this).stop().animate({'right': '102%'}, 1000, function(){
             $(this).css({'background-image': 'url(images/'+ defaultImage + ')'});
             speed = Math.floor(Math.random() * (max - min) + min);
             console.log('speed is : ', speed);
-            $(this).animate({'top': '10%'}, speed, function () {
+            $(this).animate({'right': '10%'}, speed, function () {
                 gameOver();
             });
         });
