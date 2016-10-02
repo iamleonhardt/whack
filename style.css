@@ -67,9 +67,47 @@ body {
     font-family: roboto, arial, sans-serif;
     font-size: 1.5vw;
     position: absolute;
-    right: 5vw;
+    right: 2vw;
     text-align: right;
     }
+
+.highScore {
+    font-family: roboto, arial, sans-serif;
+    font-size: 1.5vw;
+    position: absolute;
+    left: 1vw;
+    text-align: left;
+}
+
+.highScoreName {
+    font-family: roboto, arial, sans-serif;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 4vh;
+    left: 1vw;
+    text-align: left;
+}
+
+.congrats {
+    font-size: 1vw;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+}
+.enterButton {
+    width: 5vw;
+
+    background-color: #00e3bb;
+    color: #ffffff;
+    margin: .3vw .3vw;
+    padding: .5vw;
+    font-size: 1vw;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+}
 
 .tryAgain {
     background-color: #00e3bb;
@@ -95,6 +133,4 @@ body {
     left: 50%;
     padding: .5vw;
     text-align: center;
-
-
 }
